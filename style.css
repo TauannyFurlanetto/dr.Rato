@@ -1,0 +1,234 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/Gotham-Bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('fonts/Gotham-Bold.woff') format('woff'), /* Modern Browsers */
+     url('fonts/Gotham-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('fonts/Gotham-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 700;
+   font-style: normal;
+ }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/Gotham-Medium.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('fonts/Gotham-Medium.woff') format('woff'), /* Modern Browsers */
+     url('fonts/Gotham-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('fonts/Gotham-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 400;
+   font-style: normal;
+ }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/Gotham-Thin.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Gotham-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('fonts/Gotham-Thin.woff') format('woff'), /* Modern Browsers */
+     url('fonts/Gotham-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('fonts/Gotham-Thin.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 300;
+   font-style: normal;
+ }
+/* VARIABLES*/
+:root {
+  --primaryColor: #2FB2CA;
+  --secFontSize: 1.5em;
+}
+/* BODY */
+body {
+  background: white;
+  margin: 0rem;
+  font-family: "Gotham";
+  text-align: center;
+}
+section {
+  padding: 2em;
+}
+button {
+  padding: 1em;
+  border-radius: 0;
+}
+h1 {
+  font-size: 2em;
+  font-style: "Gotham-Bold";
+  color: var(--primaryColor);
+}
+.bodyText, .bodyTextLeft, .bodyTextLeftWhite, .bodyTextWhite {
+   font-size: 1em;
+}
+.secondaryHead {
+  font-style: "Gotham-Bold";
+  color: var(--primaryColor);
+  font-size: var(--secFontSize);
+}
+.secondaryHeadWhite{
+   font-style: "Gotham-Bold";
+  color: var(--primaryColor);
+  font-size: var(--secFontSize);
+}
+
+/* NAVEGATION BAR*/
+.navBar {
+  padding: 2em;
+}
+.logoImage{
+  width: 5em;
+}
+.mobileMenu {
+  width: 2.5em;
+  cursor: pointer;
+}
+nav {
+  display: none;
+}
+.navContainer {
+  display: flex;
+  place-content: space-between;
+}
+
+/* HERO */
+.hero{
+  text-align: center;
+  padding-top: 0;
+}
+
+.testemunhos, .footer {
+  background: var(--primaryColor);
+}
+.heroImage {
+  margin: 0em;
+  width: 89vw;
+  
+}
+.hero .mainAction {
+  position: relative;
+  top: 3.1em;
+}
+
+/* SERVIÇOS */
+.servBox{
+  margin: 2em 0em;
+}
+.avaliacoes, .banhoEtosa  {
+  display: inline-block;
+  text-align: left;
+}
+
+.largeParagraph {
+  font-style: "Gotham-Thin";
+  color: var(--primaryColor);
+  font-size: var(--secFontSize);
+}
+
+
+/* UNIDADES */
+
+.uniContainer{
+  display: inline-block;
+  text-align: left;
+}
+.unidade{
+  margin: 2em 0em;
+}
+.decorativeHead {
+  margin: 0;
+  font-size: 4.8em;
+
+}
+.decorativeHead{
+  display: inline-block;
+}
+.uHeadText{
+ display: inline-block;
+}
+.uHeadText .secondaryHead{
+  margin: 0;
+}
+.uHeadText .bodyText {
+  margin: 0;
+}
+.uBody{
+  margin: 0;
+}
+.uniContainer .mainAction{
+  margin: 1em 0em;
+}
+
+/* SOBRE */
+.sobreLeft{
+  display: none;
+}
+.sobreRight{
+  text-align: left;
+  line-height: 1.3em;
+}
+.sobre .mainAction{
+  margin: 1em 0em;
+}
+
+/* TESTEMUNHOS */
+.testemunhos{
+  padding: 4em;
+}
+.testemunhos .bodyTextLeftWhite{
+  font-style: "Gotham-Thin";
+  color: white;
+  text-align: right;
+}
+.testBody{
+  font-style: "Gotham-Thin";
+  color: white;
+  text-align: left;
+}
+.testHead{
+  text-align: center;
+}
+
+/*PLANO DE SAUDE*/
+
+
+.planoContainer {
+  display: inline-block;
+  text-align: left;
+}
+
+
+.secondaryHeadWhite {
+  font-style: "Gotham-Bold";
+  color: white;
+}
+
+.bodyText{
+  font-style: "Gotham-Thin";
+  color: var(--primaryColor);
+}
+.bodyTextLeft{
+  font-style: "Gotham-Thin";
+  color: var(--primaryColor);
+}
+.bodyTextWhite{
+  font-style: "Gotham-Thin";
+  color: white;
+}
+.bodyTextLeftWhite{
+  font-style: "Gotham-Thin";
+  color: white;
+}
+.mainAction {
+  background: var(--primaryColor);
+  border: None;
+
+}
+.secondaryAction {
+  background: white;
+  border-color: var(--primaryColor);
+}
+a {
+  text-decoration: None;
+}
+ul {
+  list-style-type: None;
+  margin: 0em;
+  padding: 0em;
+}
