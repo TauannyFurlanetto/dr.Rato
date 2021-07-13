@@ -1,0 +1,455 @@
+@charset "UTF-8";
+
+@import url(//db.onlinewebfonts.com/c/fc74760c72164d5321ac886797ce62eb?family=Gotham);
+@import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
+
+@font-face {font-family: "Gotham"; font-weight: bold; src: url("//db.onlinewebfonts.com/t/db33e70bc9dee9fa9ae9737ad83d77ba.eot"); src: url("//db.onlinewebfonts.com/t/db33e70bc9dee9fa9ae9737ad83d77ba.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/db33e70bc9dee9fa9ae9737ad83d77ba.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/db33e70bc9dee9fa9ae9737ad83d77ba.woff") format("woff"), url("//db.onlinewebfonts.com/t/db33e70bc9dee9fa9ae9737ad83d77ba.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/db33e70bc9dee9fa9ae9737ad83d77ba.svg#Gotham") format("svg"); 
+
+} 
+
+@font-face {font-family: "Gotham"; font-weight: thin; src: url("//db.onlinewebfonts.com/t/fc74760c72164d5321ac886797ce62eb.eot"); src: url("//db.onlinewebfonts.com/t/fc74760c72164d5321ac886797ce62eb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/fc74760c72164d5321ac886797ce62eb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/fc74760c72164d5321ac886797ce62eb.woff") format("woff"), url("//db.onlinewebfonts.com/t/fc74760c72164d5321ac886797ce62eb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/fc74760c72164d5321ac886797ce62eb.svg#Gotham") format("svg"); } 
+
+
+/* VARIABLES*/
+:root {
+  --primaryColor: #2FB2CA;
+  --terFontSize: 1em;
+  --secFontSize: 1.5em;
+  --priFontSize: 2em;
+  
+}
+/* BODY */
+body {
+  background: white;
+  margin: 0rem;
+  font-family: "Gotham";
+  text-align: center;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 2em;
+}
+button {
+  padding: 1em;
+  border-radius: 0;
+}
+h1 {
+  font-size: var(--priFontSize);
+  font-style: "Gotham-Bold";
+  color: var(--primaryColor);
+}
+.bodyText, .bodyTextLeft, .bodyTextLeftWhite, .bodyTextWhite {
+  font-size: var(--terFontSize);
+  line-height: 1.3em;
+
+}
+.secondaryHead {
+  font-style: "Gotham-Bold";
+  color: var(--primaryColor);
+  font-size: var(--secFontSize);
+}
+.secondaryHeadWhite{
+  font-style: "Gotham-Bold";
+  color: var(--primaryColor);
+  font-size: var(--secFontSize);
+}
+
+.secondaryHeadWhite {
+  font-style: "Gotham-Bold";
+  color: white;
+}
+
+.bodyText, .bodyTextLeft{
+  font-style: "Gotham-Thin";
+  color: var(--primaryColor);
+}
+
+.bodyTextWhite, .bodyTextLeftWhite{
+  font-style: "Gotham-Thin";
+  color: white;
+}
+
+.mainAction {
+  background: var(--primaryColor);
+  border: None;
+
+}
+.mainAction:hover{
+  background: white;
+  border-color: var(--primaryColor);
+  
+}
+
+.mainAction:hover a{
+  color: #2FB2CA;
+  font-weight: bold;
+
+}
+
+.secondaryAction {
+  background: white;
+  border-color: var(--primaryColor);
+}
+
+.secondaryAction:hover{
+  background: var(--primaryColor);
+  color: white;
+  
+}
+.secondaryAction:hover a{
+  color: white;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: None;
+}
+ul {
+  list-style-type: None;
+  margin: 0em;
+  padding: 0em;
+}
+
+/* NAVEGATION BAR*/
+.navBar {
+  padding: 2em;
+}
+.logoImage{
+  width: 5em;
+}
+.mobileMenu {
+  width: 2.5em;
+  cursor: pointer;
+}
+.menu {
+  display: none;
+}
+.navContainer {
+  display: flex;
+  place-content: space-between;
+}
+
+
+/* MOBILE NAVEGATION */
+.mobileOpen{
+  display: block;
+}
+
+nav {
+  text-align: right;
+  position: fixed;
+  z-index: 999;
+  width: 33%;
+  height: 100vh;
+  padding: 2em;
+  top: 0;
+  right: 0;
+  background: var(--primaryColor);
+}
+nav .navText {
+  margin: 5em 0em;
+}
+nav a {
+  display: block;
+  padding: 1em 0em;
+}
+
+nav li:hover {
+  font-weight: bold;
+}
+.emergencyButton:hover{
+  width: +10%;
+}
+.mobileMenuExit {
+  cursor: pointer;
+}
+
+/* HERO */
+.hero{
+  text-align: center;
+  padding-top: 0;
+}
+
+.testemunhos, .footer {
+  background: var(--primaryColor);
+}
+.heroImage {
+  width: 89vw;
+  
+}
+.hero .mainAction {
+  position: relative;
+  top: 3.1em;
+}
+
+/* SERVIÇOS */
+.servBox{
+  margin: 2em 0em;
+}
+.avaliacoes, .banhoEtosa  {
+  display: inline-block;
+  text-align: left;
+  margin: 1em;
+}
+
+.largeParagraph {
+  font-style: "Gotham-Thin";
+  color: var(--primaryColor);
+  font-size: var(--secFontSize);
+}
+
+
+/* UNIDADES */
+
+.unidade{
+  display: inline-block;
+  text-align: left;
+  margin: 2em;
+}
+
+.decorativeHead {
+  margin: 0;
+  font-size: 4.8em;
+
+}
+.decorativeHead{
+  display: inline-block;
+}
+.uHeadText{
+ display: inline-block;
+}
+.uHeadText > .secondaryHead, .uHeadText> .bodyText, .uBody{
+  margin: 0;
+}
+
+.mainAction{
+  margin: 1em 0em;
+}
+
+/* SOBRE */
+.sobre {
+  margin: 2em;
+}
+.sobreLeft{
+  display: none;
+}
+.sobreRight{
+  text-align: left;
+}
+.sobre .mainAction{
+  margin: 1em 0em;
+}
+
+/* TESTEMUNHOS */
+.testemunhos{
+  padding: 4em;
+}
+.testemunhos .bodyTextLeftWhite{
+  font-style: "Gotham-Thin";
+  color: white;
+  text-align: right;
+}
+.testBody{
+  font-style: "Gotham-Thin";
+  color: white;
+  text-align: left;
+}
+.testHead{
+  text-align: center;
+}
+.testLeft, .testRight {
+  padding: 1em 0em;
+}
+
+/*PLANO DE SAUDE*/
+.planoContainer {
+  display: inline-block;
+  text-align: left;
+  //width:50vw; 
+  //word-wrap: overflow-wrap;
+}
+.planoHead > p{
+   text-align: right;
+}
+.planoEsp {
+  padding: 1em 0em;
+  width: 35vw;
+}
+
+/*CONHEÇA-NOS */
+.conhecaNos .bodyText{
+  padding: 1em 0em;
+  text-align: left; 
+}
+.conhBody {
+  text-align: left; 
+
+}
+.instaImg{
+  margin: 0;
+  width: 2.5em;
+  position: relative;
+  top: 1em;
+  padding: 0em 0.5em;
+}
+.conhImg {
+  margin: 5em 0em 0em 0em;
+  width: 89vw;
+  position: relative;
+  bottom: 33vw;
+  z-index: -1;
+}
+
+/* FOOTER */
+.footer {
+  padding: 2em;
+  margin: 5em 0em 0em 0em;
+}
+.leftFooter{
+  padding: 1em 0em;
+}
+.rightFooter{
+  display: none;
+}
+ .footerElement {
+  padding: 0.5em 0em;
+ }
+
+/* MEDIA */
+
+@media only screen and (min-width: 850px){
+  /* ROOT */
+  :root{
+    --priFontSize: 3em;
+    --secFontSize: 1.8em;
+    --terFontSize: 1.3em;
+  }
+
+
+  /* NAVEGATION */
+  .mobileMenu, .mobileMenuExit {
+    display: none;
+  }
+
+  .navContainer{
+    display: flex;
+  }
+  .navContainer .logoImage {
+    display: inline-block;
+  }
+  .menu {
+    display: inline-block;
+    background: none;
+    width: 100%;
+    position: unset;
+    height: auto;
+    margin:0;
+    padding: 0;
+  }
+  nav .navText{
+    margin: 0em;
+    padding: 0em;
+  }
+  .navText a {
+    display: inline;
+    color: var(--primaryColor);
+  }
+  .navText  li{
+    display:inline;
+    padding: 0 1em;
+  }
+  .navText img {
+    position: relative;
+    top: 0.5em;
+  }
+  
+  /* HERO */
+  .hero{
+    text-align: left;
+    padding-top: 0;
+    height: 30em;
+    overflow: hidden;
+  }
+  .heroSection{
+    display: flex;
+    place-content: space-between;
+  }
+  .heroText{
+    display: inline-block;
+    overflow: visible;
+    padding: 0em 2em 0em 0em;
+  }
+  .heroImage {
+    display: inline-block;
+    //height: 80vh;
+    //width: auto;
+    width: 70vw;
+    height: auto;
+  }
+  .hero .mainAction {
+    position: unset;
+  }
+
+  /* SOBRE */
+  .sobreInfo{
+    display: flex;
+  }
+  .sobreLeft{
+    display: inline;
+  }
+
+  .sobreLeft img {
+    width: 30vw;
+    position: relative;
+    right: 5em;
+
+  }
+
+  .sobreRight{
+    display: inline;
+    text-align: right;
+  }
+
+  /* TESTEMUNHOS */
+  .testContainer{
+    padding: 0em 5em;
+  }
+
+  /* CONHEÇA */
+  .conhecaNos{
+    //display: flex;
+    //place-content: space-between;
+    height: 25em;
+    overflow: hidden;
+  }
+  .conhecaNosContainer{
+    display: flex;
+    place-content: space-between;
+  }
+  .conhLeft{
+    display: inline-block;
+  }
+  .conhImg{
+    display: inline-block;
+    position: relative;
+    bottom: 5em;
+    width: 55vw;
+    height: auto;
+    margin: 0em;
+  }
+  
+  /* PLANO DE SAUDE */
+  .planoContainer {
+  display: flex;
+  text-align: left;
+  //width:50vw; 
+  //word-wrap: overflow-wrap;
+  margin: 0em 5em;
+  }
+  .planoEsp{
+    width: 15em;
+    margin: 5vw;
+  }
+}
